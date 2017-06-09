@@ -1,18 +1,25 @@
 body{
-  direction: ltr;
+  background-color: yellow;
+  font-size: 14px;
+}
+@media (min-width: 450px){
+  body {
+    background-color: orange;
+  }
 }
 
 
 .flex-container{
   display: -webkit-flex;
   display: flex;
-  -webkit-justify-content: space-around;
-  justify-content: space-around;
+  -webkit-flex-wrap:wrap;
+  flex-wrap: wrap;
+  -webkit-align-content: center;
+  align-content: center;
   width: 400px;
   height: 250px;
   background-color: lightgrey;
 }
-
 
 .flex-item{
   background-color: cornflowerblue;
@@ -20,3 +27,27 @@ body{
   height: 100px;
   margin: 10px;
 }
+
+
+
+
+
+.first {
+  -webkit-order: -1;
+  order: -1;
+}
+
+@media (min-width: 768px){
+  body {
+    font-size:16px;
+  }
+
+  @media (min-width: 992px){
+    body {
+      font-size:30px;
+    }
+
+    @media (min-width: 1200px){
+      body {
+        font-size:50px;
+      }
